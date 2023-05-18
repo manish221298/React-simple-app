@@ -10,8 +10,13 @@ function SearchBox() {
   );
 
   const handleSearch = (e) => {
-    setSearchVal(e.target.value);
+    const num = e.target.value
+    if(num < 11 ){
+        setSearchVal(e.target.value);
+    }
   };
+
+  console.log("data", data)
 
   return (
     <div>
